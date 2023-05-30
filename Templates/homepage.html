@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'style.css') }}">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <title>Website.com</title>
+  <style>
+       p {
+   color: white;
+   font-size: 150%;
+   top: 300px;
+   position: relative;
+   }
+   </style>
+
+</head>
+<body class="bg">
+{% extends "home.html" %}
+
+{% block content %}
+<center><h1 class="headertitle">Placeholder</h1></center>
+<center><p>Welcome</p></center>
+<!-- <center><p><btn type="button" onclick= <meta http-equiv="refresh" content="delay_time; URL=new_website_url" />>Button</btn></p></center>
+-->
+<form method = "post">
+  <br/>
+  <center><p><button class = "button button1" formaction = "/test">Encrypt</button></p></center>
+  <br/>
+  <p>The result is: </p>
+  <!-- output -->
+  <p class="output">{{ display }}</p>
+
+</form>
+<br/>
+<br/>
+<br/>
+<center><p>Creators:</p></center>
+<center><p>Phan</p></center>
+{% endblock %}
+
+</body>
+</html>
+
+
+
+
